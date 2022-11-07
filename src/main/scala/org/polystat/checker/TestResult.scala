@@ -1,7 +1,7 @@
 package org.polystat.checker
 
-import org.polystat.py2eo.checker.CompilingResult.CompilingResult
-import org.polystat.py2eo.checker.Mutate.Mutation.Mutation
+import org.polystat.checker.CompilingResult.CompilingResult
+import org.polystat.checker.Mutate.Mutation.Mutation
 
 import scala.concurrent.duration.Duration
 import scala.concurrent.{Await, Future}

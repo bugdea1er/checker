@@ -1,6 +1,6 @@
 package org.polystat.checker
 
-import org.polystat.py2eo.checker.Mutate.Mutation.Mutation
+import org.polystat.checker.Mutate.Mutation.Mutation
 import org.polystat.py2eo.parser.{Expression, Parse, PrintPython, Statement}
 import org.polystat.py2eo.transpiler.GenericStatementPasses
 

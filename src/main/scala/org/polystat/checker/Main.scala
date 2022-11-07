@@ -1,6 +1,6 @@
 package org.polystat.checker
 
-import org.polystat.py2eo.checker.Mutate.Mutation
+import org.polystat.checker.Mutate.Mutation
 
 import scala.language.postfixOps
 import scala.reflect.io.Path
