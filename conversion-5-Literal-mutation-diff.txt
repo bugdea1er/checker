@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+4c4
+<     num_int_2 = 13  # 4:4-4:17
+---
+>     num_int_2 = 14  # 4:4-4:17
+
+Diff between original (left) and mutated (right) eo files
+125c125
+<                   (xnum_int_2).write ((pyint 13))
+---
+>                   (xnum_int_2).write ((pyint 14))

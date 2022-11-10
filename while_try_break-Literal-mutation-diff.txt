@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+9c9
+<             i+=1  # 9:12-9:15
+---
+>             i+=2  # 9:12-9:15
+
+Diff between original (left) and mutated (right) eo files
+203c203
+<                                                 ((xi)).aug-add ((pyint 1))
+---
+>                                                 ((xi)).aug-add ((pyint 2))

@@ -1,0 +1,15 @@
+Diff between original (left) and mutated (right) python files
+11c11
+<             if ((self.i == self.last )): # 11:54-13:11 
+---
+>             if ((self.i == self.last )): # 11:55-13:11 
+17c17
+<     r = MyRange(0 , 3 ) # 17:4-17:22
+---
+>     r = MyRange(3 , 0 ) # 17:4-17:22
+
+Diff between original (left) and mutated (right) eo files
+263c263
+<                   tmp.write (goto ((((xMyRange)).ap ((pyint 0)) ((pyint 3))).@))
+---
+>                   tmp.write (goto ((((xMyRange)).ap ((pyint 3)) ((pyint 0))).@))

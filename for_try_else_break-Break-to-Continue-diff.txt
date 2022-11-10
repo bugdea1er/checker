@@ -1,0 +1,39 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def for_try_else_break(): # 1:0-13:67
+---
+> def for_try_else_continue(): # 1:0-13:67
+9c9
+<             break # 9:12-9:16
+---
+>             continue # 9:12-9:16
+
+Diff between original (left) and mutated (right) eo files
+97c97
+<       cage 0 > xfor_try_else_break
+---
+>       cage 0 > xfor_try_else_continue
+101c101
+<           xfor_try_else_break
+---
+>           xfor_try_else_continue
+103c103
+<             (pystring "xfor_try_else_break") > x__name__
+---
+>             (pystring "xfor_try_else_continue") > x__name__
+105c105
+<               (pystring "xfor_try_else_break") > x__name__
+---
+>               (pystring "xfor_try_else_continue") > x__name__
+153c153
+<                   stdout "xfor_try_else_break\n"
+---
+>                   stdout "xfor_try_else_continue\n"
+258c258
+<                                                             stackUp.forward break
+---
+>                                                             stackUp.forward continue
+388c388
+<         tmp.write (goto ((((xfor_try_else_break)).ap).@))
+---
+>         tmp.write (goto ((((xfor_try_else_continue)).ap).@))

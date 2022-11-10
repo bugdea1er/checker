@@ -1,0 +1,15 @@
+Diff between original (left) and mutated (right) python files
+5c5
+<     except AssertionError:
+---
+>     except AssertionError2:
+
+Diff between original (left) and mutated (right) eo files
+179c179
+<                               mkCopy (xAssertionError.x__id__) > tmp3
+---
+>                               mkCopy (xAssertionError2.x__id__) > tmp3
+211c211
+<                                       mkCopy (xAssertionError.x__id__) > tmp9
+---
+>                                       mkCopy (xAssertionError2.x__id__) > tmp9

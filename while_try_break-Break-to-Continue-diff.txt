@@ -1,0 +1,39 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def while_try_break(): # 1:0-15:46
+---
+> def while_try_continue(): # 1:0-15:46
+12c12
+<             break # 12:12-12:16
+---
+>             continue # 12:12-12:16
+
+Diff between original (left) and mutated (right) eo files
+97c97
+<       cage 0 > xwhile_try_break
+---
+>       cage 0 > xwhile_try_continue
+101c101
+<           xwhile_try_break
+---
+>           xwhile_try_continue
+103c103
+<             (pystring "xwhile_try_break") > x__name__
+---
+>             (pystring "xwhile_try_continue") > x__name__
+105c105
+<               (pystring "xwhile_try_break") > x__name__
+---
+>               (pystring "xwhile_try_continue") > x__name__
+142c142
+<                   stdout "xwhile_try_break\n"
+---
+>                   stdout "xwhile_try_continue\n"
+273c273
+<                                                         stackUp.forward break
+---
+>                                                         stackUp.forward continue
+312c312
+<         tmp.write (goto ((((xwhile_try_break)).ap).@))
+---
+>         tmp.write (goto ((((xwhile_try_continue)).ap).@))

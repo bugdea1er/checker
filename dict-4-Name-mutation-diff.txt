@@ -1,0 +1,22 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def test(): # 1:0-7:53
+---
+> def test(): # 1:0-7:51
+4c4
+<     x = A() # 4:4-4:10
+---
+>     x2 = A() # 4:4-4:10
+
+Diff between original (left) and mutated (right) eo files
+110a111
+>                 cage 0 > e1
+114a116
+>                 cage 0 > xx2
+117,118d118
+<                 cage 0 > xx
+<                 cage 0 > e1
+145c145
+<                   (xx).write (tmp1.copy)
+---
+>                   (xx2).write (tmp1.copy)

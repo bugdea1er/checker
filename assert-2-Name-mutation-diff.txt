@@ -1,0 +1,18 @@
+Diff between original (left) and mutated (right) python files
+7c7
+<         mark2 = [55 , 88 , 78 , 90 , 79 ] # 7:8-7:40
+---
+>         mark22 = [55 , 88 , 78 , 90 , 79 ] # 7:8-7:40
+
+Diff between original (left) and mutated (right) eo files
+112a113
+>                 cage 0 > xmark22
+119a121
+>                 cage 0 > e14
+129,130d130
+<                 cage 0 > xmark2
+<                 cage 0 > e14
+213c213
+<                           (xmark2).write (tmp1.copy)
+---
+>                           (xmark22).write (tmp1.copy)

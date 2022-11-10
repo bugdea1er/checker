@@ -1,0 +1,115 @@
+Diff between original (left) and mutated (right) python files
+9c9
+<             i+=1  # 9:12-9:15
+---
+>             i-=1  # 9:12-9:15
+
+Diff between original (left) and mutated (right) eo files
+147,148c147,148
+<                   mkCopy (e0) > tmp1
+<                   (xres).write (tmp1.copy)
+---
+>                   mkCopy (e0) > tmp7
+>                   (xres).write (tmp7.copy)
+153,154c153,154
+<                   mkCopy (e1) > tmp2
+<                   (xarr).write (tmp2.copy)
+---
+>                   mkCopy (e1) > tmp8
+>                   (xarr).write (tmp8.copy)
+190,193c190,193
+<                                                 mkCopy (e3) > tmp3
+<                                                 (xresult).write (tmp3.copy)
+<                                                 mkCopy (xres.xappend) > tmp4
+<                                                 (e4).write (tmp4.copy)
+---
+>                                                 mkCopy (e3) > tmp9
+>                                                 (xresult).write (tmp9.copy)
+>                                                 mkCopy (xres.xappend) > tmp10
+>                                                 (e4).write (tmp10.copy)
+195,198c195,198
+<                                                 mkCopy (xres) > tmp5
+<                                                 (lhs2).write (tmp5.copy)
+<                                                 mkCopy (xresult) > tmp6
+<                                                 (lhs3).write (tmp6.copy)
+---
+>                                                 mkCopy (xres) > tmp11
+>                                                 (lhs2).write (tmp11.copy)
+>                                                 mkCopy (xresult) > tmp12
+>                                                 (lhs3).write (tmp12.copy)
+203c203
+<                                                 ((xi)).aug-add ((pyint 1))
+---
+>                                                 ((xi)).aug-sub ((pyint 1))
+213,214c213,214
+<                                                     mkCopy (xcurrent-exception.x__class__) > tmp7
+<                                                     (e7).write (tmp7.copy)
+---
+>                                                     mkCopy (xcurrent-exception.x__class__) > tmp13
+>                                                     (e7).write (tmp13.copy)
+216,217c216,217
+<                                                     mkCopy (e7.x__id__) > tmp8
+<                                                     (e8).write (tmp8.copy)
+---
+>                                                     mkCopy (e7.x__id__) > tmp14
+>                                                     (e8).write (tmp14.copy)
+219,220c219,220
+<                                                     mkCopy (xZeroDivisionError.x__id__) > tmp9
+<                                                     (e9).write (tmp9.copy)
+---
+>                                                     mkCopy (xZeroDivisionError.x__id__) > tmp15
+>                                                     (e9).write (tmp15.copy)
+231,232c231,232
+<                                                         mkCopy (xcurrent-exception.x__class__) > tmp10
+<                                                         (e11).write (tmp10.copy)
+---
+>                                                         mkCopy (xcurrent-exception.x__class__) > tmp16
+>                                                         (e11).write (tmp16.copy)
+234,235c234,235
+<                                                         mkCopy (e11.x__id__) > tmp11
+<                                                         (e12).write (tmp11.copy)
+---
+>                                                         mkCopy (e11.x__id__) > tmp17
+>                                                         (e12).write (tmp17.copy)
+237,238c237,238
+<                                                         mkCopy (xfakeclasses.xpyTypeClass) > tmp12
+<                                                         (e13).write (tmp12.copy)
+---
+>                                                         mkCopy (xfakeclasses.xpyTypeClass) > tmp18
+>                                                         (e13).write (tmp18.copy)
+240,241c240,241
+<                                                         mkCopy (e13.x__id__) > tmp13
+<                                                         (e14).write (tmp13.copy)
+---
+>                                                         mkCopy (e13.x__id__) > tmp19
+>                                                         (e14).write (tmp19.copy)
+248,249c248,249
+<                                                             mkCopy (xcurrent-exception.x__id__) > tmp14
+<                                                             (e16).write (tmp14.copy)
+---
+>                                                             mkCopy (xcurrent-exception.x__id__) > tmp20
+>                                                             (e16).write (tmp20.copy)
+251,252c251,252
+<                                                             mkCopy (xZeroDivisionError.x__id__) > tmp15
+<                                                             (e17).write (tmp15.copy)
+---
+>                                                             mkCopy (xZeroDivisionError.x__id__) > tmp21
+>                                                             (e17).write (tmp21.copy)
+261,262c261,262
+<                                                             mkCopy (lhs11) > tmp16
+<                                                             (e18).write (tmp16.copy)
+---
+>                                                             mkCopy (lhs11) > tmp22
+>                                                             (e18).write (tmp22.copy)
+264,265c264,265
+<                                                         mkCopy (e18) > tmp17
+<                                                         (lhs12).write (tmp17.copy)
+---
+>                                                         mkCopy (e18) > tmp23
+>                                                         (lhs12).write (tmp23.copy)
+299,300c299,300
+<                   mkCopy (xres) > tmp18
+<                   (lhs13).write (tmp18.copy)
+---
+>                   mkCopy (xres) > tmp24
+>                   (lhs13).write (tmp24.copy)

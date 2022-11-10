@@ -1,0 +1,15 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<         res = val # 3:8-3:16
+---
+>         res2 = val # 3:8-3:16
+
+Diff between original (left) and mutated (right) eo files
+118d117
+<                 cage 0 > xres
+127a127
+>                 cage 0 > xres2
+187c187
+<                                                 (xres).write (tmp7.copy)
+---
+>                                                 (xres2).write (tmp7.copy)

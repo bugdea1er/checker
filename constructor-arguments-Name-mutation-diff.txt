@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+5c5
+<             self.a = a1 # 5:12-5:22
+---
+>             self.a = a12 # 5:12-5:22
+
+Diff between original (left) and mutated (right) eo files
+152c152
+<                                         mkCopy (xa1) > tmp1
+---
+>                                         mkCopy (xa12) > tmp1

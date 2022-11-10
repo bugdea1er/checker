@@ -1,0 +1,213 @@
++package org.eolang
++alias goto org.eolang.goto
++alias stdout org.eolang.io.stdout
++alias sprintf org.eolang.txt.sprintf
++alias cage org.eolang.cage
++alias pyslice preface.pyslice
++alias pyint preface.pyint
++alias pair preface.pair
++alias pyfloat preface.pyfloat
++alias pystring preface.pystring
++alias pybool preface.pybool
++alias pycomplex preface.pycomplex
++alias newUID preface.newUID
++alias xfakeclasses preface.xfakeclasses
++alias mkCopy preface.mkCopy
++alias raiseNothing preface.raiseNothing
++alias continue preface.continue
++alias break preface.break
++alias return preface.return
++alias raiseEmpty preface.raiseEmpty
++alias xmyArray preface.xmyArray
++alias xmyMap preface.xmyMap
++alias xlen preface.xlen
++alias xmap preface.xmap
++alias xfilter preface.xfilter
++alias xstr preface.xstr
++alias xsum preface.xsum
++alias xlist preface.xlist
++alias xtuple preface.xtuple
++alias xint preface.xint
++alias xfloat preface.xfloat
++alias xiter preface.xiter
++alias xStopIteration preface.xStopIteration
++alias xBaseException preface.xBaseException
++alias xTypeError preface.xTypeError
++alias xZeroDivisionError preface.xZeroDivisionError
++alias xAssertionError preface.xAssertionError
++alias xValueError preface.xValueError
++alias xrange preface.xrange
++junit
+
+[unused] > augmented
+  (pystring "augmented") > x__name__
+  [] > ap
+    (pystring "augmented") > x__name__
+    [stackUp] > @
+      [id] > is-exception
+        id.greater (pyint 3) > @
+      [id] > is-break-continue-return
+        (id.greater (pyint 0)).and (id.less (pyint 4)) > @
+      [] > xbool
+        [x] > ap
+          [stackUp] > @
+            seq > @
+              stackUp.forward (return x)
+              123
+      cage 0 > xcurrent-exception
+      cage 0 > xexcinexc
+      cage FALSE > xcaught
+      pyslice 0 0 0 > dummy-pyslice-usage
+      pyint 0 > dummy-int-usage
+      pyfloat 0 > dummy-float-usage
+      pybool TRUE > dummy-bool-usage
+      pycomplex 0 0 > dummy-pycomplex
+      pystring (sprintf "") > dummy-bool-string
+      newUID > dummy-newUID
+      xfakeclasses.pyComplexClass > xcomplex
+      raiseNothing > dummy-rn
+      continue > dummy-continue
+      break > dummy-break
+      return > dummy-return
+      raiseEmpty > dummy-raiseEmpty
+      xmyArray > dummy-xmyArray
+      xmyMap > dummy-xmyMap
+      mkCopy > dummy-mkCopy
+      xlen > dummy-xlen
+      xmap > dummy-xmap
+      xfilter > dummy-xfilter
+      pair > dummy-pair
+      xstr > dummy-xstr
+      xsum > dummy-xsum
+      xlist > dummy-xlist
+      xtuple > dummy-xtuple
+      xint > dummy-xint
+      xfloat > dummy-xfloat
+      xStopIteration > dummy-stop-iteration
+      xBaseException > dummy-base-exception
+      xZeroDivisionError > dummy-xZeroDivisionError
+      xAssertionError > dummy-xAssertionError
+      xValueError > dummy-xValueError
+      xTypeError > dummy-xTypeError
+      xiter > dummy-xiter
+      xrange > dummy-xrange
+      cage 0 > tmp
+      cage 0 > toReturn
+      cage 0 > assertMe
+      cage 0 > xaugmented
+      seq > @
+        stdout "augmented\n"
+        write.
+          xaugmented
+          []
+            (pystring "xaugmented") > x__name__
+            [] > ap
+              (pystring "xaugmented") > x__name__
+              [stackUp] > @
+                cage 0 > tmp
+                cage 0 > toReturn
+                cage 0 > e6
+                cage 0 > xpow
+                cage 0 > e5
+                cage 0 > e7
+                cage 0 > xxorr
+                cage 0 > e0
+                cage 0 > xshl
+                cage 0 > e4
+                cage 0 > xandd
+                cage 0 > e8
+                cage 0 > e3
+                cage 0 > xmul
+                cage 0 > xmod
+                cage 0 > e9
+                cage 0 > xdiv
+                cage 0 > e2
+                cage 0 > xplus
+                cage 0 > xminus
+                cage 0 > xx
+                cage 0 > e1
+                cage 0 > xorr
+                cage 0 > xshr
+                cage 0 > e10
+                seq > @
+                  stdout "xaugmented\n"
+                  (xx).write ((pyint 2))
+                  (xx).force
+                  ((xx2)).aug-add ((pyint 1))
+                  (e0).write (((xx).eq (pyint 3)))
+                  (e0).force
+                  ((e0).<)
+                  mkCopy (e0) > tmp1
+                  (xplus).write (tmp1.copy)
+                  ((xx)).aug-sub ((pyint 1))
+                  (e1).write (((xx).eq (pyint 2)))
+                  (e1).force
+                  ((e1).<)
+                  mkCopy (e1) > tmp2
+                  (xminus).write (tmp2.copy)
+                  ((xx)).aug-mul ((pyint 3))
+                  (e2).write (((xx).eq (pyint 6)))
+                  (e2).force
+                  ((e2).<)
+                  mkCopy (e2) > tmp3
+                  (xmul).write (tmp3.copy)
+                  ((xx)).aug-div ((pyint 4))
+                  (e3).write (((xx).eq (pyint 1)))
+                  (e3).force
+                  ((e3).<)
+                  mkCopy (e3) > tmp4
+                  (xdiv).write (tmp4.copy)
+                  ((xx)).aug-left ((pyint 2))
+                  (e4).write (((xx).eq (pyint 4)))
+                  (e4).force
+                  ((e4).<)
+                  mkCopy (e4) > tmp5
+                  (xshl).write (tmp5.copy)
+                  ((xx)).aug-mod ((pyint 3))
+                  (e5).write (((xx).eq (pyint 1)))
+                  (e5).force
+                  ((e5).<)
+                  mkCopy (e5) > tmp6
+                  (xmod).write (tmp6.copy)
+                  ((xx)).aug-or ((pyint 4))
+                  (e6).write (((xx).eq (pyint 5)))
+                  (e6).force
+                  ((e6).<)
+                  mkCopy (e6) > tmp7
+                  (xorr).write (tmp7.copy)
+                  ((xx)).aug-and ((pyint 4))
+                  (e7).write (((xx).eq (pyint 4)))
+                  (e7).force
+                  ((e7).<)
+                  mkCopy (e7) > tmp8
+                  (xandd).write (tmp8.copy)
+                  ((xx)).aug-right ((pyint 1))
+                  (e8).write (((xx).eq (pyint 2)))
+                  (e8).force
+                  ((e8).<)
+                  mkCopy (e8) > tmp9
+                  (xshr).write (tmp9.copy)
+                  ((xx)).aug-pow ((pyint 4))
+                  (e9).write (((xx).eq (pyint 16)))
+                  (e9).force
+                  ((e9).<)
+                  mkCopy (e9) > tmp10
+                  (xpow).write (tmp10.copy)
+                  ((xx)).aug-xor ((pyint 24))
+                  (e10).write (((xx).eq (pyint 8)))
+                  (e10).force
+                  ((e10).<)
+                  mkCopy (e10) > tmp11
+                  (xxorr).write (tmp11.copy)
+                  toReturn.write ((((((((((((xplus).as-bool.if (xminus) (pybool FALSE)).as-bool.if (xmul) (pybool FALSE)).as-bool.if (xdiv) (pybool FALSE)).as-bool.if (xshl) (pybool FALSE)).as-bool.if (xmod) (pybool FALSE)).as-bool.if (xorr) (pybool FALSE)).as-bool.if (xandd) (pybool FALSE)).as-bool.if (xshr) (pybool FALSE)).as-bool.if (xpow) (pybool FALSE)).as-bool.if (xxorr) (pybool FALSE)))
+                  stackUp.forward (return toReturn)
+                  stackUp.forward (return 0)
+                  123
+        tmp.write (goto ((((xaugmented)).ap).@))
+        (tmp.x__class__.x__id__.neq (return.x__class__.x__id__)).if (stackUp.forward tmp) 0
+        (assertMe).write (tmp.result)
+        toReturn.write ((assertMe))
+        stackUp.forward (return toReturn)
+        stackUp.forward (return 0)
+  seq > @
+    (goto (ap.@)).result

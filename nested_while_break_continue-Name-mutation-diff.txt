@@ -1,0 +1,22 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     arr2 = [4 , 5 , 6 ] # 3:4-3:22
+---
+>     arr22 = [4 , 5 , 6 ] # 3:4-3:22
+11c11
+<             if (((j >= len(arr2) ) or (arr2[j] == 4  ))): # 11:71-14:11 
+---
+>             if (((j >= len(arr2) ) or (arr2[j] == 4  ))): # 11:72-14:11 
+
+Diff between original (left) and mutated (right) eo files
+111d110
+<                 cage 0 > e1
+127a127,128
+>                 cage 0 > e1
+>                 cage 0 > xarr22
+132d132
+<                 cage 0 > xarr2
+163c163
+<                   (xarr2).write (tmp2.copy)
+---
+>                   (xarr22).write (tmp2.copy)

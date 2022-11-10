@@ -1,0 +1,206 @@
++package org.eolang
++alias goto org.eolang.goto
++alias stdout org.eolang.io.stdout
++alias sprintf org.eolang.txt.sprintf
++alias cage org.eolang.cage
++alias pyslice preface.pyslice
++alias pyint preface.pyint
++alias pair preface.pair
++alias pyfloat preface.pyfloat
++alias pystring preface.pystring
++alias pybool preface.pybool
++alias pycomplex preface.pycomplex
++alias newUID preface.newUID
++alias xfakeclasses preface.xfakeclasses
++alias mkCopy preface.mkCopy
++alias raiseNothing preface.raiseNothing
++alias continue preface.continue
++alias break preface.break
++alias return preface.return
++alias raiseEmpty preface.raiseEmpty
++alias xmyArray preface.xmyArray
++alias xmyMap preface.xmyMap
++alias xlen preface.xlen
++alias xmap preface.xmap
++alias xfilter preface.xfilter
++alias xstr preface.xstr
++alias xsum preface.xsum
++alias xlist preface.xlist
++alias xtuple preface.xtuple
++alias xint preface.xint
++alias xfloat preface.xfloat
++alias xiter preface.xiter
++alias xStopIteration preface.xStopIteration
++alias xBaseException preface.xBaseException
++alias xTypeError preface.xTypeError
++alias xZeroDivisionError preface.xZeroDivisionError
++alias xAssertionError preface.xAssertionError
++alias xValueError preface.xValueError
++alias xrange preface.xrange
++junit
+
+[unused] > my-list
+  (pystring "my-list") > x__name__
+  [] > ap
+    (pystring "my-list") > x__name__
+    [stackUp] > @
+      [id] > is-exception
+        id.greater (pyint 3) > @
+      [id] > is-break-continue-return
+        (id.greater (pyint 0)).and (id.less (pyint 4)) > @
+      [] > xbool
+        [x] > ap
+          [stackUp] > @
+            seq > @
+              stackUp.forward (return x)
+              123
+      cage 0 > xcurrent-exception
+      cage 0 > xexcinexc
+      cage FALSE > xcaught
+      pyslice 0 0 0 > dummy-pyslice-usage
+      pyint 0 > dummy-int-usage
+      pyfloat 0 > dummy-float-usage
+      pybool TRUE > dummy-bool-usage
+      pycomplex 0 0 > dummy-pycomplex
+      pystring (sprintf "") > dummy-bool-string
+      newUID > dummy-newUID
+      xfakeclasses.pyComplexClass > xcomplex
+      raiseNothing > dummy-rn
+      continue > dummy-continue
+      break > dummy-break
+      return > dummy-return
+      raiseEmpty > dummy-raiseEmpty
+      xmyArray > dummy-xmyArray
+      xmyMap > dummy-xmyMap
+      mkCopy > dummy-mkCopy
+      xlen > dummy-xlen
+      xmap > dummy-xmap
+      xfilter > dummy-xfilter
+      pair > dummy-pair
+      xstr > dummy-xstr
+      xsum > dummy-xsum
+      xlist > dummy-xlist
+      xtuple > dummy-xtuple
+      xint > dummy-xint
+      xfloat > dummy-xfloat
+      xStopIteration > dummy-stop-iteration
+      xBaseException > dummy-base-exception
+      xZeroDivisionError > dummy-xZeroDivisionError
+      xAssertionError > dummy-xAssertionError
+      xValueError > dummy-xValueError
+      xTypeError > dummy-xTypeError
+      xiter > dummy-xiter
+      xrange > dummy-xrange
+      cage 0 > tmp
+      cage 0 > toReturn
+      cage 0 > assertMe
+      cage 0 > xmyLi
+      seq > @
+        stdout "my-list\n"
+        write.
+          xmyLi
+          []
+            (pystring "xmyLi") > x__name__
+            [] > ap
+              (pystring "xmyLi") > x__name__
+              [stackUp] > @
+                cage 0 > tmp
+                cage 0 > toReturn
+                cage 0 > e1
+                cage 0 > e5
+                cage 0 > lhs1
+                cage 0 > xc
+                cage 0 > e4
+                cage 0 > e3
+                cage 0 > xlst
+                cage 0 > e2
+                cage 0 > xco
+                seq > @
+                  stdout "xmyLi\n"
+                  write.
+                    xc
+                    []
+                      newUID.ap 0 > x__id__
+                      (goto (ap.@)).result > @
+                      [x] > eq
+                        x__id__.eq (x.x__id__) > @
+                      [] > ap
+                        [stackUp] > @
+                          cage result > pResult
+                          cage 0 > tmp
+                          [] > result
+                            cage 0 > xhead
+                            cage 0 > xtail2
+                            xc > x__class__
+                            seq > initFields
+                              xhead.write (pystring "None: is there a None literal in the EO language?")
+                              xtail2.write (pystring "None: is there a None literal in the EO language?")
+                          seq (result.initFields) (pResult.write result) (stackUp.forward (return pResult)) > @
+                  write.
+                    xco
+                    []
+                      (pystring "xco") > x__name__
+                      [xheadNotCopied xtailNotCopied] > ap
+                        (pystring "xco") > x__name__
+                        [stackUp] > @
+                          cage 0 > tmp
+                          cage 0 > toReturn
+                          xheadNotCopied' > xhead
+                          xtailNotCopied' > xtail
+                          cage 0 > xo
+                          cage 0 > e0
+                          seq > @
+                            stdout "xco\n"
+                            xhead.<
+                            xtail.<
+                            tmp.write (goto ((((xc)).ap).@))
+                            (tmp.x__class__.x__id__.neq (return.x__class__.x__id__)).if (stackUp.forward tmp) 0
+                            (e0).write (tmp.result)
+                            ((e0).<)
+                            mkCopy (e0) > tmp1
+                            (xo).write (tmp1.copy)
+                            mkCopy (xhead) > tmp2
+                            ((xo).xhead).write (tmp2.copy)
+                            mkCopy (xtail) > tmp3
+                            ((xo).xtail).write (tmp3.copy)
+                            toReturn.write ((xo))
+                            stackUp.forward (return toReturn)
+                            stackUp.forward (return 0)
+                            123
+                  (xlst).write ((pystring "None: is there a None literal in the EO language?"))
+                  (xlst).force
+                  tmp.write (goto ((((xco)).ap ((pyint 1)) ((xlst))).@))
+                  (tmp.x__class__.x__id__.neq (return.x__class__.x__id__)).if (stackUp.forward tmp) 0
+                  (e1).write (tmp.result)
+                  ((e1).<)
+                  mkCopy (e1) > tmp4
+                  (xlst).write (tmp4.copy)
+                  tmp.write (goto ((((xco)).ap ((pyint 2)) ((xlst))).@))
+                  (tmp.x__class__.x__id__.neq (return.x__class__.x__id__)).if (stackUp.forward tmp) 0
+                  (e2).write (tmp.result)
+                  ((e2).<)
+                  mkCopy (e2) > tmp5
+                  (xlst).write (tmp5.copy)
+                  mkCopy (xlst.xtail) > tmp6
+                  (e3).write (tmp6.copy)
+                  ((e3).<)
+                  mkCopy (e3.xhead) > tmp7
+                  (e4).write (tmp7.copy)
+                  ((e4).<)
+                  (lhs1).write ((pyint 1))
+                  (lhs1).force
+                  (e5).write (((e4).eq (lhs1)))
+                  (e5).force
+                  ((e5).<)
+                  toReturn.write ((e5))
+                  stackUp.forward (return toReturn)
+                  stackUp.forward (return 0)
+                  123
+        tmp.write (goto ((((xmyLi)).ap).@))
+        (tmp.x__class__.x__id__.neq (return.x__class__.x__id__)).if (stackUp.forward tmp) 0
+        (assertMe).write (tmp.result)
+        toReturn.write ((assertMe))
+        stackUp.forward (return toReturn)
+        stackUp.forward (return 0)
+  seq > @
+    (goto (ap.@)).result

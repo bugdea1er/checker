@@ -1,0 +1,152 @@
++package org.eolang
++alias goto org.eolang.goto
++alias stdout org.eolang.io.stdout
++alias sprintf org.eolang.txt.sprintf
++alias cage org.eolang.cage
++alias pyslice preface.pyslice
++alias pyint preface.pyint
++alias pair preface.pair
++alias pyfloat preface.pyfloat
++alias pystring preface.pystring
++alias pybool preface.pybool
++alias pycomplex preface.pycomplex
++alias newUID preface.newUID
++alias xfakeclasses preface.xfakeclasses
++alias mkCopy preface.mkCopy
++alias raiseNothing preface.raiseNothing
++alias continue preface.continue
++alias break preface.break
++alias return preface.return
++alias raiseEmpty preface.raiseEmpty
++alias xmyArray preface.xmyArray
++alias xmyMap preface.xmyMap
++alias xlen preface.xlen
++alias xmap preface.xmap
++alias xfilter preface.xfilter
++alias xstr preface.xstr
++alias xsum preface.xsum
++alias xlist preface.xlist
++alias xtuple preface.xtuple
++alias xint preface.xint
++alias xfloat preface.xfloat
++alias xiter preface.xiter
++alias xStopIteration preface.xStopIteration
++alias xBaseException preface.xBaseException
++alias xTypeError preface.xTypeError
++alias xZeroDivisionError preface.xZeroDivisionError
++alias xAssertionError preface.xAssertionError
++alias xValueError preface.xValueError
++alias xrange preface.xrange
++junit
+
+[unused] > if-12
+  (pystring "if-12") > x__name__
+  [] > ap
+    (pystring "if-12") > x__name__
+    [stackUp] > @
+      [id] > is-exception
+        id.greater (pyint 3) > @
+      [id] > is-break-continue-return
+        (id.greater (pyint 0)).and (id.less (pyint 4)) > @
+      [] > xbool
+        [x] > ap
+          [stackUp] > @
+            seq > @
+              stackUp.forward (return x)
+              123
+      cage 0 > xcurrent-exception
+      cage 0 > xexcinexc
+      cage FALSE > xcaught
+      pyslice 0 0 0 > dummy-pyslice-usage
+      pyint 0 > dummy-int-usage
+      pyfloat 0 > dummy-float-usage
+      pybool TRUE > dummy-bool-usage
+      pycomplex 0 0 > dummy-pycomplex
+      pystring (sprintf "") > dummy-bool-string
+      newUID > dummy-newUID
+      xfakeclasses.pyComplexClass > xcomplex
+      raiseNothing > dummy-rn
+      continue > dummy-continue
+      break > dummy-break
+      return > dummy-return
+      raiseEmpty > dummy-raiseEmpty
+      xmyArray > dummy-xmyArray
+      xmyMap > dummy-xmyMap
+      mkCopy > dummy-mkCopy
+      xlen > dummy-xlen
+      xmap > dummy-xmap
+      xfilter > dummy-xfilter
+      pair > dummy-pair
+      xstr > dummy-xstr
+      xsum > dummy-xsum
+      xlist > dummy-xlist
+      xtuple > dummy-xtuple
+      xint > dummy-xint
+      xfloat > dummy-xfloat
+      xStopIteration > dummy-stop-iteration
+      xBaseException > dummy-base-exception
+      xZeroDivisionError > dummy-xZeroDivisionError
+      xAssertionError > dummy-xAssertionError
+      xValueError > dummy-xValueError
+      xTypeError > dummy-xTypeError
+      xiter > dummy-xiter
+      xrange > dummy-xrange
+      cage 0 > tmp
+      cage 0 > toReturn
+      cage 0 > assertMe
+      cage 0 > xconditionalCheck11
+      seq > @
+        stdout "if-12\n"
+        write.
+          xconditionalCheck11
+          []
+            (pystring "xconditionalCheck11") > x__name__
+            [] > ap
+              (pystring "xconditionalCheck11") > x__name__
+              [stackUp] > @
+                cage 0 > tmp
+                cage 0 > toReturn
+                cage 0 > lhs0
+                cage 0 > e1
+                cage 0 > lhs1
+                cage 0 > e0
+                cage 0 > xc
+                cage 0 > xb
+                cage 0 > xa
+                seq > @
+                  stdout "xconditionalCheck11\n"
+                  (xa).write ((pyint 4))
+                  (xa).force
+                  (xb).write ((pyint 2))
+                  (xb).force
+                  (e0).write (((xa).leq (xb)))
+                  (e0).force
+                  ((e0).<)
+                  (e0).as-bool.if
+                    seq
+                      (lhs0).write ((pyint 42))
+                      (lhs0).force
+                      (pybool TRUE)
+                    seq
+                      (lhs1).write ((pyint 43))
+                      (lhs1).force
+                      mkCopy (lhs1) > tmp1
+                      (lhs0).write (tmp1.copy)
+                      (pybool TRUE)
+                  mkCopy (lhs0) > tmp2
+                  (xc).write (tmp2.copy)
+                  (e1).write (((xc).eq (pyint 43)))
+                  (e1).force
+                  ((e1).<)
+                  toReturn.write ((e1))
+                  stackUp.forward (return toReturn)
+                  stackUp.forward (return 0)
+                  123
+        tmp.write (goto ((((xconditionalCheck11)).ap).@))
+        (tmp.x__class__.x__id__.neq (return.x__class__.x__id__)).if (stackUp.forward tmp) 0
+        (assertMe).write (tmp.result)
+        toReturn.write ((assertMe))
+        stackUp.forward (return toReturn)
+        stackUp.forward (return 0)
+  seq > @
+    (goto (ap.@)).result

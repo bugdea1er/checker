@@ -1,0 +1,31 @@
+Diff between original (left) and mutated (right) python files
+2,3c2,3
+<     finallyHappened = False # 2:4-2:26
+<     elseHappened = False # 3:4-3:23
+---
+>     finallyHappened = false # 2:4-2:26
+>     elseHappened = false # 3:4-3:23
+
+Diff between original (left) and mutated (right) eo files
+117,120c117,120
+<                   (xfinallyHappened).write ((pybool FALSE))
+<                   (xfinallyHappened).force
+<                   (xelseHappened).write ((pybool FALSE))
+<                   (xelseHappened).force
+---
+>                   mkCopy (xfalse) > tmp1
+>                   (xfinallyHappened).write (tmp1.copy)
+>                   mkCopy (xfalse) > tmp2
+>                   (xelseHappened).write (tmp2.copy)
+183,184c183,184
+<                   mkCopy (xfinallyHappened) > tmp1
+<                   (lhs0).write (tmp1.copy)
+---
+>                   mkCopy (xfinallyHappened) > tmp3
+>                   (lhs0).write (tmp3.copy)
+194,195c194,195
+<                       mkCopy (lhs1) > tmp2
+<                       (e0).write (tmp2.copy)
+---
+>                       mkCopy (lhs1) > tmp4
+>                       (e0).write (tmp4.copy)

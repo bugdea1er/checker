@@ -1,0 +1,43 @@
++package org.eolang
++alias pyint preface.pyint
++alias pyfloat preface.pyfloat
++alias pystring preface.pystring
++alias pybool preface.pybool
++junit
+pyint 0 > dummy-int-usage
+pystring 0 > dummy-string-usage
+pyfloat 0 > dummy-float-usage
+pybool TRUE > dummy-bool-usage
+memory 0 > xprint
+[] > yeoblockeddef3
+  [args...] > unsupported
+  [args...] > xunsupported
+  memory 0 > bogusForceDataize
+  memory 0 > xbogusForceDataize
+  memory 0 > xhack
+  seq > @
+    xhack.write
+      []
+        memory 0 > xmy_decorator
+        memory 0 > xsay_whee
+        seq > @
+          seq
+            xmy_decorator.write
+              [xfunc]
+                memory 0 > xwrapper
+                seq > @
+                  seq
+                    xwrapper.write
+                      []
+                        seq > @
+                          seq
+                            bogusForceDataize.write (((xprint)).ap ((pystring "Something is happening before the function is called.")))
+                            bogusForceDataize.write (((xfunc)).ap)
+                            bogusForceDataize.write (((xprint)).ap ((pystring "Something is happening after the function is called.")))
+                    (((unsupported)).ap ((xwrapper)))
+            xsay_whee.write
+              []
+                seq > @
+                  (((unsupported)).ap)
+                    bogusForceDataize.write (((xprint)).ap ((pystring "Whee!")))
+                    (((unsupported)).ap ((pybool TRUE)))

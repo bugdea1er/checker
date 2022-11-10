@@ -1,0 +1,20 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     num_flo = 1.23 # 3:4-3:17
+---
+>     num_flo2 = 1.23 # 3:4-3:17
+
+Diff between original (left) and mutated (right) eo files
+115d114
+<                 cage 0 > e3
+117d115
+<                 cage 0 > xnum_flo
+118a117,118
+>                 cage 0 > xnum_flo2
+>                 cage 0 > e3
+123,124c123,124
+<                   (xnum_flo).write ((pyfloat 1.23))
+<                   (xnum_flo).force
+---
+>                   (xnum_flo2).write ((pyfloat 1.23))
+>                   (xnum_flo2).force

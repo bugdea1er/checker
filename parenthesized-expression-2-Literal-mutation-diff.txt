@@ -1,0 +1,17 @@
+Diff between original (left) and mutated (right) python files
+3,4c3,4
+<     b = 6  # 3:4-3:8
+<     c = 11  # 4:4-4:9
+---
+>     b = 7  # 3:4-3:8
+>     c = 12  # 4:4-4:9
+
+Diff between original (left) and mutated (right) eo files
+121c121
+<                   (xb).write ((pyint 6))
+---
+>                   (xb).write ((pyint 7))
+123c123
+<                   (xc).write ((pyint 11))
+---
+>                   (xc).write ((pyint 12))

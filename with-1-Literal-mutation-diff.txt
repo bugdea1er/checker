@@ -1,0 +1,23 @@
+Diff between original (left) and mutated (right) python files
+6,7c6,7
+<             value+=1  # 6:12-6:19
+<             return 10  # 7:12-7:20
+---
+>             value+=2  # 6:12-6:19
+>             return 11  # 7:12-7:20
+10c10
+<             value+=100  # 10:12-10:21
+---
+>             value+=101  # 10:12-10:21
+
+Diff between original (left) and mutated (right) eo files
+168,169c168,169
+<                                         ((xvalue)).aug-add ((pyint 1))
+<                                         toReturn.write ((pyint 10))
+---
+>                                         ((xvalue)).aug-add ((pyint 2))
+>                                         toReturn.write ((pyint 11))
+192c192
+<                                         ((xvalue)).aug-add ((pyint 100))
+---
+>                                         ((xvalue)).aug-add ((pyint 101))

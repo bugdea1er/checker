@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+5c5
+<         x+=z # 5:8-5:11
+---
+>         x-=z # 5:8-5:11
+
+Diff between original (left) and mutated (right) eo files
+131c131
+<                             ((xx)).aug-add ((xz))
+---
+>                             ((xx)).aug-sub ((xz))

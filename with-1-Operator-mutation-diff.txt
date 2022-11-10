@@ -1,0 +1,27 @@
+Diff between original (left) and mutated (right) python files
+6c6
+<             value+=1  # 6:12-6:19
+---
+>             value-=1  # 6:12-6:19
+10c10
+<             value+=100  # 10:12-10:21
+---
+>             value-=100  # 10:12-10:21
+12c12
+<         value+=z # 12:8-12:15
+---
+>         value-=z # 12:8-12:15
+
+Diff between original (left) and mutated (right) eo files
+168c168
+<                                         ((xvalue)).aug-add ((pyint 1))
+---
+>                                         ((xvalue)).aug-sub ((pyint 1))
+192c192
+<                                         ((xvalue)).aug-add ((pyint 100))
+---
+>                                         ((xvalue)).aug-sub ((pyint 100))
+226c226
+<                           ((xvalue)).aug-add ((xz))
+---
+>                           ((xvalue)).aug-sub ((xz))

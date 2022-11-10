@@ -1,0 +1,17 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     n = 5  # 3:4-3:8
+---
+>     n2 = 5  # 3:4-3:8
+
+Diff between original (left) and mutated (right) eo files
+109d108
+<                 cage 0 > xn
+118a118
+>                 cage 0 > xn2
+129,130c129,130
+<                   (xn).write ((pyint 5))
+<                   (xn).force
+---
+>                   (xn2).write ((pyint 5))
+>                   (xn2).force

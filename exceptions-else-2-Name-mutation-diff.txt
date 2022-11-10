@@ -1,0 +1,15 @@
+Diff between original (left) and mutated (right) python files
+5c5
+<         x = 5  # 5:8-5:12
+---
+>         x2 = 5  # 5:8-5:12
+
+Diff between original (left) and mutated (right) eo files
+109a110
+>                 cage 0 > xx2
+137,138c138,139
+<                               (xx).write ((pyint 5))
+<                               (xx).force
+---
+>                               (xx2).write ((pyint 5))
+>                               (xx2).force

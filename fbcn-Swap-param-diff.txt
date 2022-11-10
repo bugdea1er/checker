@@ -1,0 +1,271 @@
+Diff between original (left) and mutated (right) python files
+7c7
+<             if ((j == 5  )): # 7:41-10:11 
+---
+>             if ((j == 5  )): # 7:42-10:11 
+
+Diff between original (left) and mutated (right) eo files
+181,182c181,182
+<                   mkCopy (e0) > tmp9
+<                   (xarr1).write (tmp9.copy)
+---
+>                   mkCopy (e0) > tmp1
+>                   (xarr1).write (tmp1.copy)
+187,188c187,188
+<                   mkCopy (e1) > tmp10
+<                   (xarr2).write (tmp10.copy)
+---
+>                   mkCopy (e1) > tmp2
+>                   (xarr2).write (tmp2.copy)
+193,198c193,198
+<                   mkCopy (e2) > tmp11
+<                   (xres).write (tmp11.copy)
+<                   mkCopy (xarr1) > tmp12
+<                   (xinn0).write (tmp12.copy)
+<                   mkCopy (xinn0.x__iter__) > tmp13
+<                   (e3).write (tmp13.copy)
+---
+>                   mkCopy (e2) > tmp3
+>                   (xres).write (tmp3.copy)
+>                   mkCopy (xarr1) > tmp4
+>                   (xinn0).write (tmp4.copy)
+>                   mkCopy (xinn0.x__iter__) > tmp5
+>                   (e3).write (tmp5.copy)
+200,201c200,201
+<                   mkCopy (xinn0) > tmp14
+<                   (lhs0).write (tmp14.copy)
+---
+>                   mkCopy (xinn0) > tmp6
+>                   (lhs0).write (tmp6.copy)
+206,207c206,207
+<                   mkCopy (e4) > tmp15
+<                   (xit0).write (tmp15.copy)
+---
+>                   mkCopy (e4) > tmp7
+>                   (xit0).write (tmp7.copy)
+232,233c232,233
+<                                                 mkCopy (xit0.x__next__) > tmp16
+<                                                 (e5).write (tmp16.copy)
+---
+>                                                 mkCopy (xit0.x__next__) > tmp8
+>                                                 (e5).write (tmp8.copy)
+235,236c235,236
+<                                                 mkCopy (xit0) > tmp17
+<                                                 (lhs2).write (tmp17.copy)
+---
+>                                                 mkCopy (xit0) > tmp9
+>                                                 (lhs2).write (tmp9.copy)
+241,246c241,246
+<                                                 mkCopy (e6) > tmp18
+<                                                 (xi).write (tmp18.copy)
+<                                                 mkCopy (xarr2) > tmp19
+<                                                 (xinn1).write (tmp19.copy)
+<                                                 mkCopy (xinn1.x__iter__) > tmp20
+<                                                 (e7).write (tmp20.copy)
+---
+>                                                 mkCopy (e6) > tmp10
+>                                                 (xi).write (tmp10.copy)
+>                                                 mkCopy (xarr2) > tmp11
+>                                                 (xinn1).write (tmp11.copy)
+>                                                 mkCopy (xinn1.x__iter__) > tmp12
+>                                                 (e7).write (tmp12.copy)
+248,249c248,249
+<                                                 mkCopy (xinn1) > tmp21
+<                                                 (lhs4).write (tmp21.copy)
+---
+>                                                 mkCopy (xinn1) > tmp13
+>                                                 (lhs4).write (tmp13.copy)
+254,255c254,255
+<                                                 mkCopy (e8) > tmp22
+<                                                 (xit1).write (tmp22.copy)
+---
+>                                                 mkCopy (e8) > tmp14
+>                                                 (xit1).write (tmp14.copy)
+280,281c280,281
+<                                                                               mkCopy (xit1.x__next__) > tmp23
+<                                                                               (e9).write (tmp23.copy)
+---
+>                                                                               mkCopy (xit1.x__next__) > tmp15
+>                                                                               (e9).write (tmp15.copy)
+283,284c283,284
+<                                                                               mkCopy (xit1) > tmp24
+<                                                                               (lhs6).write (tmp24.copy)
+---
+>                                                                               mkCopy (xit1) > tmp16
+>                                                                               (lhs6).write (tmp16.copy)
+289,290c289,290
+<                                                                               mkCopy (e10) > tmp25
+<                                                                               (xj).write (tmp25.copy)
+---
+>                                                                               mkCopy (e10) > tmp17
+>                                                                               (xj).write (tmp17.copy)
+300,301c300,301
+<                                                                               mkCopy (xres.xappend) > tmp26
+<                                                                               (e12).write (tmp26.copy)
+---
+>                                                                               mkCopy (xres.xappend) > tmp18
+>                                                                               (e12).write (tmp18.copy)
+303,306c303,306
+<                                                                               mkCopy (xres) > tmp27
+<                                                                               (lhs8).write (tmp27.copy)
+<                                                                               mkCopy (xj) > tmp28
+<                                                                               (lhs9).write (tmp28.copy)
+---
+>                                                                               mkCopy (xres) > tmp19
+>                                                                               (lhs8).write (tmp19.copy)
+>                                                                               mkCopy (xj) > tmp20
+>                                                                               (lhs9).write (tmp20.copy)
+329,330c329,330
+<                                                             mkCopy (xcurrent-exception.x__class__) > tmp29
+<                                                             (e14).write (tmp29.copy)
+---
+>                                                             mkCopy (xcurrent-exception.x__class__) > tmp21
+>                                                             (e14).write (tmp21.copy)
+332,333c332,333
+<                                                             mkCopy (e14.x__id__) > tmp30
+<                                                             (e15).write (tmp30.copy)
+---
+>                                                             mkCopy (e14.x__id__) > tmp22
+>                                                             (e15).write (tmp22.copy)
+335,336c335,336
+<                                                             mkCopy (xStopIteration.x__id__) > tmp31
+<                                                             (e16).write (tmp31.copy)
+---
+>                                                             mkCopy (xStopIteration.x__id__) > tmp23
+>                                                             (e16).write (tmp23.copy)
+347,348c347,348
+<                                                                 mkCopy (xcurrent-exception.x__class__) > tmp32
+<                                                                 (e18).write (tmp32.copy)
+---
+>                                                                 mkCopy (xcurrent-exception.x__class__) > tmp24
+>                                                                 (e18).write (tmp24.copy)
+350,351c350,351
+<                                                                 mkCopy (e18.x__id__) > tmp33
+<                                                                 (e19).write (tmp33.copy)
+---
+>                                                                 mkCopy (e18.x__id__) > tmp25
+>                                                                 (e19).write (tmp25.copy)
+353,354c353,354
+<                                                                 mkCopy (xfakeclasses.xpyTypeClass) > tmp34
+<                                                                 (e20).write (tmp34.copy)
+---
+>                                                                 mkCopy (xfakeclasses.xpyTypeClass) > tmp26
+>                                                                 (e20).write (tmp26.copy)
+356,357c356,357
+<                                                                 mkCopy (e20.x__id__) > tmp35
+<                                                                 (e21).write (tmp35.copy)
+---
+>                                                                 mkCopy (e20.x__id__) > tmp27
+>                                                                 (e21).write (tmp27.copy)
+364,365c364,365
+<                                                                     mkCopy (xcurrent-exception.x__id__) > tmp36
+<                                                                     (e23).write (tmp36.copy)
+---
+>                                                                     mkCopy (xcurrent-exception.x__id__) > tmp28
+>                                                                     (e23).write (tmp28.copy)
+367,368c367,368
+<                                                                     mkCopy (xStopIteration.x__id__) > tmp37
+<                                                                     (e24).write (tmp37.copy)
+---
+>                                                                     mkCopy (xStopIteration.x__id__) > tmp29
+>                                                                     (e24).write (tmp29.copy)
+377,378c377,378
+<                                                                     mkCopy (lhs17) > tmp38
+<                                                                     (e25).write (tmp38.copy)
+---
+>                                                                     mkCopy (lhs17) > tmp30
+>                                                                     (e25).write (tmp30.copy)
+380,381c380,381
+<                                                                 mkCopy (e25) > tmp39
+<                                                                 (lhs18).write (tmp39.copy)
+---
+>                                                                 mkCopy (e25) > tmp31
+>                                                                 (lhs18).write (tmp31.copy)
+412,413c412,413
+<                                                 mkCopy (xres.xappend) > tmp40
+<                                                 (e27).write (tmp40.copy)
+---
+>                                                 mkCopy (xres.xappend) > tmp32
+>                                                 (e27).write (tmp32.copy)
+415,418c415,418
+<                                                 mkCopy (xres) > tmp41
+<                                                 (lhs19).write (tmp41.copy)
+<                                                 mkCopy (xi) > tmp42
+<                                                 (lhs20).write (tmp42.copy)
+---
+>                                                 mkCopy (xres) > tmp33
+>                                                 (lhs19).write (tmp33.copy)
+>                                                 mkCopy (xi) > tmp34
+>                                                 (lhs20).write (tmp34.copy)
+441,442c441,442
+<                               mkCopy (xcurrent-exception.x__class__) > tmp43
+<                               (e29).write (tmp43.copy)
+---
+>                               mkCopy (xcurrent-exception.x__class__) > tmp35
+>                               (e29).write (tmp35.copy)
+444,445c444,445
+<                               mkCopy (e29.x__id__) > tmp44
+<                               (e30).write (tmp44.copy)
+---
+>                               mkCopy (e29.x__id__) > tmp36
+>                               (e30).write (tmp36.copy)
+447,448c447,448
+<                               mkCopy (xStopIteration.x__id__) > tmp45
+<                               (e31).write (tmp45.copy)
+---
+>                               mkCopy (xStopIteration.x__id__) > tmp37
+>                               (e31).write (tmp37.copy)
+459,460c459,460
+<                                   mkCopy (xcurrent-exception.x__class__) > tmp46
+<                                   (e33).write (tmp46.copy)
+---
+>                                   mkCopy (xcurrent-exception.x__class__) > tmp38
+>                                   (e33).write (tmp38.copy)
+462,463c462,463
+<                                   mkCopy (e33.x__id__) > tmp47
+<                                   (e34).write (tmp47.copy)
+---
+>                                   mkCopy (e33.x__id__) > tmp39
+>                                   (e34).write (tmp39.copy)
+465,466c465,466
+<                                   mkCopy (xfakeclasses.xpyTypeClass) > tmp48
+<                                   (e35).write (tmp48.copy)
+---
+>                                   mkCopy (xfakeclasses.xpyTypeClass) > tmp40
+>                                   (e35).write (tmp40.copy)
+468,469c468,469
+<                                   mkCopy (e35.x__id__) > tmp49
+<                                   (e36).write (tmp49.copy)
+---
+>                                   mkCopy (e35.x__id__) > tmp41
+>                                   (e36).write (tmp41.copy)
+476,477c476,477
+<                                       mkCopy (xcurrent-exception.x__id__) > tmp50
+<                                       (e38).write (tmp50.copy)
+---
+>                                       mkCopy (xcurrent-exception.x__id__) > tmp42
+>                                       (e38).write (tmp42.copy)
+479,480c479,480
+<                                       mkCopy (xStopIteration.x__id__) > tmp51
+<                                       (e39).write (tmp51.copy)
+---
+>                                       mkCopy (xStopIteration.x__id__) > tmp43
+>                                       (e39).write (tmp43.copy)
+489,490c489,490
+<                                       mkCopy (lhs28) > tmp52
+<                                       (e40).write (tmp52.copy)
+---
+>                                       mkCopy (lhs28) > tmp44
+>                                       (e40).write (tmp44.copy)
+492,493c492,493
+<                                   mkCopy (e40) > tmp53
+<                                   (lhs29).write (tmp53.copy)
+---
+>                                   mkCopy (e40) > tmp45
+>                                   (lhs29).write (tmp45.copy)
+515,516c515,516
+<                   mkCopy (xres) > tmp54
+<                   (lhs30).write (tmp54.copy)
+---
+>                   mkCopy (xres) > tmp46
+>                   (lhs30).write (tmp46.copy)

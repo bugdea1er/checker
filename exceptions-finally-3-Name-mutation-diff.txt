@@ -1,0 +1,23 @@
+Diff between original (left) and mutated (right) python files
+6c6
+<             x = 1  # 6:12-6:16
+---
+>             x2 = 1  # 6:12-6:16
+
+Diff between original (left) and mutated (right) eo files
+110a111
+>                 cage 0 > e1
+116d116
+<                 cage 0 > e21
+128,129d127
+<                 cage 0 > xx
+<                 cage 0 > e1
+138a137,138
+>                 cage 0 > e21
+>                 cage 0 > xx2
+180,181c180,181
+<                                   (xx).write ((pyint 1))
+<                                   (xx).force
+---
+>                                   (xx2).write ((pyint 1))
+>                                   (xx2).force

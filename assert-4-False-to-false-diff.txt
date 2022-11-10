@@ -1,0 +1,79 @@
+Diff between original (left) and mutated (right) python files
+2c2
+<     result = False # 2:4-2:17
+---
+>     result = false # 2:4-2:17
+
+Diff between original (left) and mutated (right) eo files
+132,133c132,133
+<                   (xresult).write ((pybool FALSE))
+<                   (xresult).force
+---
+>                   mkCopy (xfalse) > tmp1
+>                   (xresult).write (tmp1.copy)
+173,174c173,174
+<                               mkCopy (xcurrent-exception.x__class__) > tmp1
+<                               (e4).write (tmp1.copy)
+---
+>                               mkCopy (xcurrent-exception.x__class__) > tmp48
+>                               (e4).write (tmp48.copy)
+176,177c176,177
+<                               mkCopy (e4.x__id__) > tmp2
+<                               (e5).write (tmp2.copy)
+---
+>                               mkCopy (e4.x__id__) > tmp49
+>                               (e5).write (tmp49.copy)
+179,180c179,180
+<                               mkCopy (xAssertionError.x__id__) > tmp3
+<                               (e6).write (tmp3.copy)
+---
+>                               mkCopy (xAssertionError.x__id__) > tmp50
+>                               (e6).write (tmp50.copy)
+191,192c191,192
+<                                   mkCopy (xcurrent-exception.x__class__) > tmp4
+<                                   (e8).write (tmp4.copy)
+---
+>                                   mkCopy (xcurrent-exception.x__class__) > tmp51
+>                                   (e8).write (tmp51.copy)
+194,195c194,195
+<                                   mkCopy (e8.x__id__) > tmp5
+<                                   (e9).write (tmp5.copy)
+---
+>                                   mkCopy (e8.x__id__) > tmp52
+>                                   (e9).write (tmp52.copy)
+197,198c197,198
+<                                   mkCopy (xfakeclasses.xpyTypeClass) > tmp6
+<                                   (e10).write (tmp6.copy)
+---
+>                                   mkCopy (xfakeclasses.xpyTypeClass) > tmp53
+>                                   (e10).write (tmp53.copy)
+200,201c200,201
+<                                   mkCopy (e10.x__id__) > tmp7
+<                                   (e11).write (tmp7.copy)
+---
+>                                   mkCopy (e10.x__id__) > tmp54
+>                                   (e11).write (tmp54.copy)
+208,209c208,209
+<                                       mkCopy (xcurrent-exception.x__id__) > tmp8
+<                                       (e13).write (tmp8.copy)
+---
+>                                       mkCopy (xcurrent-exception.x__id__) > tmp55
+>                                       (e13).write (tmp55.copy)
+211,212c211,212
+<                                       mkCopy (xAssertionError.x__id__) > tmp9
+<                                       (e14).write (tmp9.copy)
+---
+>                                       mkCopy (xAssertionError.x__id__) > tmp56
+>                                       (e14).write (tmp56.copy)
+221,222c221,222
+<                                       mkCopy (lhs9) > tmp10
+<                                       (e15).write (tmp10.copy)
+---
+>                                       mkCopy (lhs9) > tmp57
+>                                       (e15).write (tmp57.copy)
+224,225c224,225
+<                                   mkCopy (e15) > tmp11
+<                                   (lhs10).write (tmp11.copy)
+---
+>                                   mkCopy (e15) > tmp58
+>                                   (lhs10).write (tmp58.copy)

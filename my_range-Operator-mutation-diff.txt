@@ -1,0 +1,31 @@
+Diff between original (left) and mutated (right) python files
+15c15
+<                 self.i = (self.i + 1 ) # 15:16-15:37
+---
+>                 self.i = (self.i - 1 ) # 15:16-15:37
+20,22c20,22
+<         z = (z + r.__next__()) # 20:8-20:29
+<         z = (z + r.__next__()) # 21:8-21:29
+<         z = (z + r.__next__()) # 22:8-22:29
+---
+>         z = (z - r.__next__()) # 20:8-20:29
+>         z = (z - r.__next__()) # 21:8-21:29
+>         z = (z - r.__next__()) # 22:8-22:29
+
+Diff between original (left) and mutated (right) eo files
+257c257
+<                                             (e3).write (((e2).add (lhs0)))
+---
+>                                             (e3).write (((e2).sub (lhs0)))
+296c296
+<                           (e10).write (((lhs5).add (e9)))
+---
+>                           (e10).write (((lhs5).sub (e9)))
+312c312
+<                           (e13).write (((lhs9).add (e12)))
+---
+>                           (e13).write (((lhs9).sub (e12)))
+328c328
+<                           (e16).write (((lhs13).add (e15)))
+---
+>                           (e16).write (((lhs13).sub (e15)))

@@ -1,0 +1,22 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     res = [] # 3:4-3:11
+---
+>     res2 = [] # 3:4-3:11
+7c7
+<             if ((j == 2  )): # 7:40-10:11 
+---
+>             if ((j == 2  )): # 7:42-10:11 
+
+Diff between original (left) and mutated (right) eo files
+112d111
+<                 cage 0 > e4
+114d112
+<                 cage 0 > xres
+122a121,122
+>                 cage 0 > e4
+>                 cage 0 > xres2
+136c136
+<                   (xres).write (tmp1.copy)
+---
+>                   (xres2).write (tmp1.copy)

@@ -1,0 +1,24 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     subStr = "loH" # 3:4-3:17
+---
+>     subStr2 = "loH" # 3:4-3:17
+
+Diff between original (left) and mutated (right) eo files
+112d111
+<                 cage 0 > e17
+126c125,126
+<                 cage 0 > e20
+---
+>                 cage 0 > e17
+>                 cage 0 > xsubStr2
+128c128
+<                 cage 0 > xsubStr
+---
+>                 cage 0 > e20
+151,152c151,152
+<                   (xsubStr).write ((pystring "loH"))
+<                   (xsubStr).force
+---
+>                   (xsubStr2).write ((pystring "loH"))
+>                   (xsubStr2).force

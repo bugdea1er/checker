@@ -1,0 +1,15 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     arr = [1 , 2 , 4 , 0 , 8 ] # 3:4-3:29
+---
+>     arr2 = [1 , 2 , 4 , 0 , 8 ] # 3:4-3:29
+
+Diff between original (left) and mutated (right) eo files
+136a137
+>                 cage 0 > xarr2
+141d141
+<                 cage 0 > xarr
+174c174
+<                   (xarr).write (tmp2.copy)
+---
+>                   (xarr2).write (tmp2.copy)

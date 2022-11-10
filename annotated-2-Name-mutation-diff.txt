@@ -1,0 +1,23 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     d['a'] : int = 0 
+---
+>     d['a'] : int2 = 0 
+
+Diff between original (left) and mutated (right) eo files
+125,128c125,128
+<                   mkCopy (e0) > tmp5
+<                   (xd).write (tmp5.copy)
+<                   mkCopy (xd.xsetAtIndex) > tmp6
+<                   (e1).write (tmp6.copy)
+---
+>                   mkCopy (e0) > tmp1
+>                   (xd).write (tmp1.copy)
+>                   mkCopy (xd.xsetAtIndex) > tmp2
+>                   (e1).write (tmp2.copy)
+130,131c130,131
+<                   mkCopy (xd) > tmp7
+<                   (lhs0).write (tmp7.copy)
+---
+>                   mkCopy (xd) > tmp3
+>                   (lhs0).write (tmp3.copy)

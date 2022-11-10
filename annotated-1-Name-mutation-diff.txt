@@ -1,0 +1,27 @@
+Diff between original (left) and mutated (right) python files
+4c4
+<         y = 11  # 4:8-4:13
+---
+>         y2 = 11  # 4:8-4:13
+
+Diff between original (left) and mutated (right) eo files
+141c141
+<                             cage 0 > xy
+---
+>                             cage 0 > xy2
+145c145
+<                               xy.write (pyint 11)
+---
+>                               xy2.write (pyint 11)
+184,185c184,185
+<                       mkCopy (xc.xx) > tmp5
+<                       (e6).write (tmp5.copy)
+---
+>                       mkCopy (xc.xx) > tmp8
+>                       (e6).write (tmp8.copy)
+196,197c196,197
+<                       mkCopy (lhs8) > tmp6
+<                       (e7).write (tmp6.copy)
+---
+>                       mkCopy (lhs8) > tmp9
+>                       (e7).write (tmp9.copy)

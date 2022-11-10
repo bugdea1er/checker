@@ -1,0 +1,39 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def break_continue6(): # 1:0-13:57
+---
+> def continue_continue6(): # 1:0-13:57
+9c9
+<             break # 9:12-9:16
+---
+>             continue # 9:12-9:16
+
+Diff between original (left) and mutated (right) eo files
+97c97
+<       cage 0 > xbreak_continue6
+---
+>       cage 0 > xcontinue_continue6
+101c101
+<           xbreak_continue6
+---
+>           xcontinue_continue6
+103c103
+<             (pystring "xbreak_continue6") > x__name__
+---
+>             (pystring "xcontinue_continue6") > x__name__
+105c105
+<               (pystring "xbreak_continue6") > x__name__
+---
+>               (pystring "xcontinue_continue6") > x__name__
+123c123
+<                   stdout "xbreak_continue6\n"
+---
+>                   stdout "xcontinue_continue6\n"
+170c170
+<                                                 stackUp.forward break
+---
+>                                                 stackUp.forward continue
+208c208
+<         tmp.write (goto ((((xbreak_continue6)).ap).@))
+---
+>         tmp.write (goto ((((xcontinue_continue6)).ap).@))

@@ -1,0 +1,13 @@
+Diff between original (left) and mutated (right) python files
+7c7
+<     return False # 7:4-7:15
+\ No newline at end of file
+---
+>     return false # 7:4-7:15
+\ No newline at end of file
+
+Diff between original (left) and mutated (right) eo files
+148c148
+<                   toReturn.write ((pybool FALSE))
+---
+>                   toReturn.write ((xfalse))

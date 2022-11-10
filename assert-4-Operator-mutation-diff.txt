@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+4c4
+<         assert ((2  + 2 ) == 5  ), "Houston we've got a problem" # 4:8-4:63
+---
+>         assert ((2  - 2 ) == 5  ), "Houston we've got a problem" # 4:8-4:63
+
+Diff between original (left) and mutated (right) eo files
+143c143
+<                           (e1).write (((pyint 2).add (pyint 2)))
+---
+>                           (e1).write (((pyint 2).sub (pyint 2)))

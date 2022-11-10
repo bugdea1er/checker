@@ -1,0 +1,18 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     new_list = list(filter((lambda x : ((x % 2 ) == 0  )), my_list)) # 3:4-3:67
+---
+>     new_list2 = list(filter((lambda x : ((x % 2 ) == 0  )), my_list)) # 3:4-3:67
+
+Diff between original (left) and mutated (right) eo files
+110d109
+<                 cage 0 > xlhs1
+120d118
+<                 cage 0 > xnew_list
+121a120,121
+>                 cage 0 > xnew_list2
+>                 cage 0 > xlhs1
+178c178
+<                   (xnew_list).write (tmp7.copy)
+---
+>                   (xnew_list2).write (tmp7.copy)

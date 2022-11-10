@@ -1,0 +1,13 @@
+Diff between original (left) and mutated (right) python files
+10,11c10,11
+<             j+=1  # 10:12-10:15
+<             if (((j >= len(arr2) ) or (arr2[j] == 4  ))): # 11:71-14:11 
+---
+>             j+=2  # 10:12-10:15
+>             if (((j >= len(arr2) ) or (arr2[j] == 4  ))): # 11:72-14:11 
+
+Diff between original (left) and mutated (right) eo files
+241c241
+<                                                               ((xj)).aug-add ((pyint 1))
+---
+>                                                               ((xj)).aug-add ((pyint 2))

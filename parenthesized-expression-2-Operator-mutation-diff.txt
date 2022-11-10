@@ -1,0 +1,13 @@
+Diff between original (left) and mutated (right) python files
+5c5
+<     return (((a + b) / c) == 1  ) # 5:4-5:32
+\ No newline at end of file
+---
+>     return (((a - b) / c) == 1  ) # 5:4-5:32
+\ No newline at end of file
+
+Diff between original (left) and mutated (right) eo files
+125c125
+<                   (e0).write (((xa).add (xb)))
+---
+>                   (e0).write (((xa).sub (xb)))

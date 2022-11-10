@@ -1,0 +1,13 @@
+Diff between original (left) and mutated (right) python files
+8c8
+<     return ((c.a + d.b) == 11  ) # 8:4-8:31
+\ No newline at end of file
+---
+>     return ((c.a - d.b) == 11  ) # 8:4-8:31
+\ No newline at end of file
+
+Diff between original (left) and mutated (right) eo files
+177c177
+<                   (e2).write (((e0).add (e1)))
+---
+>                   (e2).write (((e0).sub (e1)))

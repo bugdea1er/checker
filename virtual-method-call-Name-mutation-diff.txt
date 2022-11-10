@@ -1,0 +1,19 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def myC(): # 1:0-13:35
+---
+> def myC(): # 1:0-13:37
+12c12
+<     o = d() # 12:4-12:10
+---
+>     o2 = d() # 12:4-12:10
+
+Diff between original (left) and mutated (right) eo files
+112d111
+<                 cage 0 > xo
+115a115
+>                 cage 0 > xo2
+254c254
+<                   (xo).write (tmp5.copy)
+---
+>                   (xo2).write (tmp5.copy)

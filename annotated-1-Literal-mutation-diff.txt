@@ -1,0 +1,27 @@
+Diff between original (left) and mutated (right) python files
+4c4
+<         y = 11  # 4:8-4:13
+---
+>         y = 12  # 4:8-4:13
+6c6
+<     c.x : int = 0 
+---
+>     c.x : int = 1 
+9c9
+<     d['a'] : int = 0 
+---
+>     d['a'] : int = 1 
+
+Diff between original (left) and mutated (right) eo files
+145c145
+<                               xy.write (pyint 11)
+---
+>                               xy.write (pyint 12)
+153c153
+<                   ((xc).xx).write ((pyint 0))
+---
+>                   ((xc).xx).write ((pyint 1))
+168c168
+<                   (lhs2).write ((pyint 0))
+---
+>                   (lhs2).write ((pyint 1))

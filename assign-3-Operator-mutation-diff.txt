@@ -1,0 +1,13 @@
+Diff between original (left) and mutated (right) python files
+4c4
+<     return ((a + b) == 4  ) # 4:4-4:26
+\ No newline at end of file
+---
+>     return ((a - b) == 4  ) # 4:4-4:26
+\ No newline at end of file
+
+Diff between original (left) and mutated (right) eo files
+120c120
+<                   (e0).write (((xa).add (xb)))
+---
+>                   (e0).write (((xa).sub (xb)))

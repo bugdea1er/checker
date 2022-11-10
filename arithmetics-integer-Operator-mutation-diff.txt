@@ -1,0 +1,19 @@
+Diff between original (left) and mutated (right) python files
+4c4
+<     uplus = (1  == (+1 ) ) # 4:4-4:25
+---
+>     uplus = (1  == (-1 ) ) # 4:4-4:25
+8c8
+<     add = ((1  + 10 ) == 11  ) # 8:4-8:29
+---
+>     add = ((1  - 10 ) == 11  ) # 8:4-8:29
+
+Diff between original (left) and mutated (right) eo files
+212c212
+<                   (e5).write (((pyint 1)))
+---
+>                   (e5).write (((pyint 1).neg))
+251c251
+<                   (e13).write (((pyint 1).add (pyint 10)))
+---
+>                   (e13).write (((pyint 1).sub (pyint 10)))

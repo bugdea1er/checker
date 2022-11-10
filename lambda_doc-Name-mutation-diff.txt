@@ -1,0 +1,18 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     x = f(11 ) # 3:4-3:13
+---
+>     x2 = f(11 ) # 3:4-3:13
+
+Diff between original (left) and mutated (right) eo files
+108a109
+>                 cage 0 > e1
+109a111
+>                 cage 0 > xx2
+112,113d113
+<                 cage 0 > xx
+<                 cage 0 > e1
+145c145
+<                   (xx).write (tmp2.copy)
+---
+>                   (xx2).write (tmp2.copy)

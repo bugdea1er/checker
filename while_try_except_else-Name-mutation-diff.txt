@@ -1,0 +1,21 @@
+Diff between original (left) and mutated (right) python files
+5c5
+<             x = int(1 ) # 5:12-5:22
+---
+>             x2 = int(1 ) # 5:12-5:22
+
+Diff between original (left) and mutated (right) eo files
+109a110
+>                 cage 0 > e1
+117d117
+<                 cage 0 > lhs9
+127,128d126
+<                 cage 0 > xx
+<                 cage 0 > e1
+136a135,136
+>                 cage 0 > xx2
+>                 cage 0 > lhs9
+177c177
+<                                                 (xx).write (tmp2.copy)
+---
+>                                                 (xx2).write (tmp2.copy)

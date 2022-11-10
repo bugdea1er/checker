@@ -1,0 +1,70 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     y = 3.14 # 3:4-3:11
+---
+>     y2 = 3.14 # 3:4-3:11
+
+Diff between original (left) and mutated (right) eo files
+111a112
+>                 cage 0 > e4
+113a115
+>                 cage 0 > xy2
+118,119d119
+<                 cage 0 > e4
+<                 cage 0 > xy
+128,131c128,131
+<                   (xy).write ((pyfloat 3.14))
+<                   (xy).force
+<                   mkCopy (xy) > tmp8
+<                   (lhs0).write (tmp8.copy)
+---
+>                   (xy2).write ((pyfloat 3.14))
+>                   (xy2).force
+>                   mkCopy (xy) > tmp1
+>                   (lhs0).write (tmp1.copy)
+137,140c137,140
+<                   mkCopy (e1) > tmp9
+<                   (xz).write (tmp9.copy)
+<                   mkCopy (xz.x__class__) > tmp10
+<                   (e2).write (tmp10.copy)
+---
+>                   mkCopy (e1) > tmp2
+>                   (xz).write (tmp2.copy)
+>                   mkCopy (xz.x__class__) > tmp3
+>                   (e2).write (tmp3.copy)
+142,143c142,143
+<                   mkCopy (xcomplex) > tmp11
+<                   (lhs2).write (tmp11.copy)
+---
+>                   mkCopy (xcomplex) > tmp4
+>                   (lhs2).write (tmp4.copy)
+149,150c149,150
+<                       mkCopy (xz.ximag) > tmp12
+<                       (e4).write (tmp12.copy)
+---
+>                       mkCopy (xz.ximag) > tmp5
+>                       (e4).write (tmp5.copy)
+152,153c152,153
+<                       mkCopy (e4.x__class__) > tmp13
+<                       (e5).write (tmp13.copy)
+---
+>                       mkCopy (e4.x__class__) > tmp6
+>                       (e5).write (tmp6.copy)
+155,156c155,156
+<                       mkCopy (xz.xreal) > tmp14
+<                       (e6).write (tmp14.copy)
+---
+>                       mkCopy (xz.xreal) > tmp7
+>                       (e6).write (tmp7.copy)
+158,159c158,159
+<                       mkCopy (e6.x__class__) > tmp15
+<                       (e7).write (tmp15.copy)
+---
+>                       mkCopy (e6.x__class__) > tmp8
+>                       (e7).write (tmp8.copy)
+168,169c168,169
+<                       mkCopy (lhs7) > tmp16
+<                       (e8).write (tmp16.copy)
+---
+>                       mkCopy (lhs7) > tmp9
+>                       (e8).write (tmp9.copy)

@@ -1,0 +1,21 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     for num in range(5 ): # 3:4-10:3
+---
+>     for num2 in range(5 ): # 3:4-10:3
+
+Diff between original (left) and mutated (right) eo files
+110d109
+<                 cage 0 > e12
+112a112
+>                 cage 0 > e7
+127a128,129
+>                 cage 0 > xnum2
+>                 cage 0 > e12
+130,131d131
+<                 cage 0 > e7
+<                 cage 0 > xnum
+209c209
+<                                                 (xnum).write (tmp8.copy)
+---
+>                                                 (xnum2).write (tmp8.copy)

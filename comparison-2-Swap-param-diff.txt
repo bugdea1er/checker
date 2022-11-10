@@ -1,0 +1,7 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def test(): # 1:0-4:112
+---
+> def test(): # 1:0-4:113
+
+No diff between original and mutated eo files

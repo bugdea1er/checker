@@ -1,0 +1,39 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def for_break(): # 1:0-8:34
+---
+> def for_continue(): # 1:0-8:34
+5c5
+<             break # 5:12-5:16
+---
+>             continue # 5:12-5:16
+
+Diff between original (left) and mutated (right) eo files
+97c97
+<       cage 0 > xfor_break
+---
+>       cage 0 > xfor_continue
+101c101
+<           xfor_break
+---
+>           xfor_continue
+103c103
+<             (pystring "xfor_break") > x__name__
+---
+>             (pystring "xfor_continue") > x__name__
+105c105
+<               (pystring "xfor_break") > x__name__
+---
+>               (pystring "xfor_continue") > x__name__
+137c137
+<                   stdout "xfor_break\n"
+---
+>                   stdout "xfor_continue\n"
+193c193
+<                                                     stackUp.forward break
+---
+>                                                     stackUp.forward continue
+296c296
+<         tmp.write (goto ((((xfor_break)).ap).@))
+---
+>         tmp.write (goto ((((xfor_continue)).ap).@))

@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+5c5
+<     x.a = 13  # 5:4-5:11
+---
+>     x.a = 14  # 5:4-5:11
+
+Diff between original (left) and mutated (right) eo files
+145c145
+<                   ((xx).xa).write ((pyint 13))
+---
+>                   ((xx).xa).write ((pyint 14))

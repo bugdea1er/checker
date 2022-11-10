@@ -1,0 +1,39 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def while_break3(): # 1:0-12:40
+---
+> def while_continue3(): # 1:0-12:40
+8c8
+<             break # 8:12-8:16
+---
+>             continue # 8:12-8:16
+
+Diff between original (left) and mutated (right) eo files
+97c97
+<       cage 0 > xwhile_break3
+---
+>       cage 0 > xwhile_continue3
+101c101
+<           xwhile_break3
+---
+>           xwhile_continue3
+103c103
+<             (pystring "xwhile_break3") > x__name__
+---
+>             (pystring "xwhile_continue3") > x__name__
+105c105
+<               (pystring "xwhile_break3") > x__name__
+---
+>               (pystring "xwhile_continue3") > x__name__
+129c129
+<                   stdout "xwhile_break3\n"
+---
+>                   stdout "xwhile_continue3\n"
+198c198
+<                                             stackUp.forward break
+---
+>                                             stackUp.forward continue
+225c225
+<         tmp.write (goto ((((xwhile_break3)).ap).@))
+---
+>         tmp.write (goto ((((xwhile_continue3)).ap).@))

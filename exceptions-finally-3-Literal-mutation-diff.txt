@@ -1,0 +1,19 @@
+Diff between original (left) and mutated (right) python files
+13c13
+<             x+=10  # 13:12-13:16
+---
+>             x+=11  # 13:12-13:16
+16c16
+<         x+=100  # 16:8-16:13
+---
+>         x+=101  # 16:8-16:13
+
+Diff between original (left) and mutated (right) eo files
+268c268
+<                             ((xx)).aug-add ((pyint 10))
+---
+>                             ((xx)).aug-add ((pyint 11))
+340c340
+<                                   ((xx)).aug-add ((pyint 100))
+---
+>                                   ((xx)).aug-add ((pyint 101))

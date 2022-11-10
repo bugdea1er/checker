@@ -1,0 +1,31 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     j = 0  # 3:4-3:8
+---
+>     j = 1  # 3:4-3:8
+7c7
+<             if ((j == 3  )): # 7:40-10:11 
+---
+>             if ((j == 3  )): # 7:42-10:11 
+11c11
+<             j+=1  # 11:12-11:15
+---
+>             j+=2  # 11:12-11:15
+13c13
+<         i+=1  # 13:8-13:11
+---
+>         i+=2  # 13:8-13:11
+
+Diff between original (left) and mutated (right) eo files
+127c127
+<                   (xj).write ((pyint 0))
+---
+>                   (xj).write ((pyint 1))
+204c204
+<                                                               ((xj)).aug-add ((pyint 1))
+---
+>                                                               ((xj)).aug-add ((pyint 2))
+214c214
+<                                         ((xi)).aug-add ((pyint 1))
+---
+>                                         ((xi)).aug-add ((pyint 2))

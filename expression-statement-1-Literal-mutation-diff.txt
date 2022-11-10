@@ -1,0 +1,23 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def check(): # 1:0-9:33
+---
+> def check(): # 1:0-9:31
+4c4
+<         a = 6  # 4:8-4:12
+---
+>         a = 7  # 4:8-4:12
+7c7
+<         a = 1  # 7:8-7:12
+---
+>         a = 2  # 7:8-7:12
+
+Diff between original (left) and mutated (right) eo files
+123c123
+<                       (xa).write ((pyint 6))
+---
+>                       (xa).write ((pyint 7))
+129c129
+<                       (xa).write ((pyint 1))
+---
+>                       (xa).write ((pyint 2))

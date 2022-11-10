@@ -1,0 +1,18 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     new_list = list(map((lambda x : (x * 2 )), my_list)) # 3:4-3:55
+---
+>     new_list2 = list(map((lambda x : (x * 2 )), my_list)) # 3:4-3:55
+
+Diff between original (left) and mutated (right) eo files
+109d108
+<                 cage 0 > xlhs1
+118d116
+<                 cage 0 > xnew_list
+119a118,119
+>                 cage 0 > xnew_list2
+>                 cage 0 > xlhs1
+171c171
+<                   (xnew_list).write (tmp7.copy)
+---
+>                   (xnew_list2).write (tmp7.copy)

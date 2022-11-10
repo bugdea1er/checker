@@ -1,0 +1,15 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def myC(): # 1:0-13:35
+---
+> def myC(): # 1:0-13:37
+9c9
+<             return 2  # 9:12-9:19
+---
+>             return 3  # 9:12-9:19
+
+Diff between original (left) and mutated (right) eo files
+213c213
+<                                         toReturn.write ((pyint 2))
+---
+>                                         toReturn.write ((pyint 3))

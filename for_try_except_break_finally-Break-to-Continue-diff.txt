@@ -1,0 +1,39 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def for_try_except_break_finally(): # 1:0-14:38
+---
+> def for_try_except_continue_finally(): # 1:0-14:38
+8c8
+<             break # 8:12-8:16
+---
+>             continue # 8:12-8:16
+
+Diff between original (left) and mutated (right) eo files
+97c97
+<       cage 0 > xfor_try_except_break_finally
+---
+>       cage 0 > xfor_try_except_continue_finally
+101c101
+<           xfor_try_except_break_finally
+---
+>           xfor_try_except_continue_finally
+103c103
+<             (pystring "xfor_try_except_break_finally") > x__name__
+---
+>             (pystring "xfor_try_except_continue_finally") > x__name__
+105c105
+<               (pystring "xfor_try_except_break_finally") > x__name__
+---
+>               (pystring "xfor_try_except_continue_finally") > x__name__
+161c161
+<                   stdout "xfor_try_except_break_finally\n"
+---
+>                   stdout "xfor_try_except_continue_finally\n"
+304c304
+<                                                                 stackUp.forward break
+---
+>                                                                 stackUp.forward continue
+437c437
+<         tmp.write (goto ((((xfor_try_except_break_finally)).ap).@))
+---
+>         tmp.write (goto ((((xfor_try_except_continue_finally)).ap).@))

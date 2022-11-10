@@ -1,0 +1,39 @@
+Diff between original (left) and mutated (right) python files
+1c1
+< def nested_while_break_continue(): # 1:0-21:49
+---
+> def nested_while_continue_continue(): # 1:0-21:49
+17c17
+<             break # 17:12-17:16
+---
+>             continue # 17:12-17:16
+
+Diff between original (left) and mutated (right) eo files
+97c97
+<       cage 0 > xnested_while_break_continue
+---
+>       cage 0 > xnested_while_continue_continue
+101c101
+<           xnested_while_break_continue
+---
+>           xnested_while_continue_continue
+103c103
+<             (pystring "xnested_while_break_continue") > x__name__
+---
+>             (pystring "xnested_while_continue_continue") > x__name__
+105c105
+<               (pystring "xnested_while_break_continue") > x__name__
+---
+>               (pystring "xnested_while_continue_continue") > x__name__
+151c151
+<                   stdout "xnested_while_break_continue\n"
+---
+>                   stdout "xnested_while_continue_continue\n"
+323c323
+<                                             stackUp.forward break
+---
+>                                             stackUp.forward continue
+361c361
+<         tmp.write (goto ((((xnested_while_break_continue)).ap).@))
+---
+>         tmp.write (goto ((((xnested_while_continue_continue)).ap).@))

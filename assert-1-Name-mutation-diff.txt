@@ -1,0 +1,17 @@
+Diff between original (left) and mutated (right) python files
+6c6
+<     k = divide(21 , 3 ) # 6:4-6:22
+---
+>     k2 = divide(21 , 3 ) # 6:4-6:22
+
+Diff between original (left) and mutated (right) eo files
+113a114,115
+>                 cage 0 > e17
+>                 cage 0 > xk2
+121,122d122
+<                 cage 0 > e17
+<                 cage 0 > xk
+182c182
+<                   (xk).write (tmp1.copy)
+---
+>                   (xk2).write (tmp1.copy)

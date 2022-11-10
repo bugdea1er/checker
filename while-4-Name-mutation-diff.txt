@@ -1,0 +1,17 @@
+Diff between original (left) and mutated (right) python files
+3c3
+<     b = 10  # 3:4-3:9
+---
+>     b2 = 10  # 3:4-3:9
+
+Diff between original (left) and mutated (right) eo files
+111c111
+<                 cage 0 > xb
+---
+>                 cage 0 > xb2
+117,118c117,118
+<                   (xb).write ((pyint 10))
+<                   (xb).force
+---
+>                   (xb2).write ((pyint 10))
+>                   (xb2).force

@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+6c6
+<     class d(c): # 6:4-8:3
+---
+>     class d(c2): # 6:4-8:3
+
+Diff between original (left) and mutated (right) eo files
+171c171
+<                             goto (((xc).ap).@) > base
+---
+>                             goto (((xc2).ap).@) > base

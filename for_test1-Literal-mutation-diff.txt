@@ -1,0 +1,11 @@
+Diff between original (left) and mutated (right) python files
+6c6
+<         sum+=1  # 6:8-6:13
+---
+>         sum+=2  # 6:8-6:13
+
+Diff between original (left) and mutated (right) eo files
+269c269
+<                                   ((xsum)).aug-add ((pyint 1))
+---
+>                                   ((xsum)).aug-add ((pyint 2))
