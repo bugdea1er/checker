@@ -1,18 +1,26 @@
 package org.polystat.checker
 
 import org.polystat.checker.CompilingResult.CompilingResult
+import org.polystat.checker.Mutate.Mutation
 import org.polystat.checker.Mutate.Mutation.Mutation
 import org.polystat.py2eo.transpiler.Transpile
 import org.yaml.snakeyaml.Yaml
 
 import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
-import scala.language.postfixOps
 import scala.reflect.io.{File, Path}
 import scala.sys.error
 import scala.sys.process.Process
 
 object Check {
+
+  /**
+   * Apply analysis to every yaml test in the input directory
+   *
+   * @param inputPath  Path to tests directory
+   * @param outputPath Path to output html representation
+   */
+  def apply(inputPath: Path, outputPath: Path): Unit = apply(inputPath, outputPath, Mutation.values)
 
   /**
    * Apply analysis to every yaml test in the input directory
@@ -25,7 +33,7 @@ object Check {
     outputPath.createDirectory()
 
     val testResults = check(inputPath, outputPath, mutations)
-    if (testResults isEmpty) {
+    if (testResults.isEmpty) {
       error("Provided tests directory doesn't contain .yaml files")
     } else {
       val awaitedTestResults = testResults map (testResult => testResult.await)
@@ -37,12 +45,12 @@ object Check {
   def diffName(name: String, mutation: Mutation): String = s"$name-$mutation-diff.txt"
 
   private def check(inputPath: Path, outputPath: Path, mutations: Iterable[Mutation]): List[TestResult] = {
-    if (inputPath isDirectory) {
+    if (inputPath.isDirectory) {
       inputPath.toDirectory.list.toList flatMap (item => check(item, outputPath, mutations))
     } else if (inputPath hasExtension "yaml") {
       List(check(inputPath.toFile, outputPath, mutations))
     } else {
-      List empty
+      Nil
     }
   }
 
@@ -95,7 +103,7 @@ object Check {
           val originalEoFile = File(outputPath / s"$module.eo")
           val diffEoOutput = Process(s"diff $originalEoFile $mutatedEoFile", outputPath.jfile).lazyLines_!
 
-          if (diffEoOutput isEmpty) {
+          if (diffEoOutput.isEmpty) {
             diffFile appendAll "\n\nNo diff between original and mutated eo files\n"
             CompilingResult.nodiff
           } else {
@@ -109,7 +117,7 @@ object Check {
   }
 
   private def parseYaml(file: File): Option[String] = {
-    val input = file slurp
+    val input = file.slurp
     val map = new Yaml load[java.util.Map[String, String]] input
 
     Transpile.applyStyle(map get "python")

@@ -1,8 +1,5 @@
 package org.polystat.checker
 
-import org.polystat.checker.Mutate.Mutation
-
-import scala.language.postfixOps
 import scala.reflect.io.Path
 
 object Main {
@@ -12,12 +9,11 @@ object Main {
 
   def main(args: Array[String]): Unit = {
     if (args.length == 2) {
-      val inputPath = Path(args(0)) toAbsolute
-      val outputPath = Path(args(1)) toAbsolute
-      val mutations = Mutation values
+      val inputPath = Path(args(0)).toAbsolute
+      val outputPath = Path(args(1)).toAbsolute
 
-      if (inputPath exists) {
-        Check(inputPath, outputPath, mutations)
+      if (inputPath.exists) {
+        Check(inputPath, outputPath)
       } else {
         error(nonValidInputError)
       }

@@ -19,7 +19,8 @@ object Write {
   private def html(tests: List[AwaitedTestResult], mutations: List[Mutation]): String = {
     lazy val stream = getClass getResourceAsStream "head.html"
     lazy val head = Streamable slurp stream
-    lazy val body = s"<body>\n${table(tests, mutations)}<a href=\"${WriteConstructions.filename}\">Constructions</a></body>\n"
+    lazy val body =
+      s"<body>\n${table(tests, mutations)}<a href=\"${WriteConstructions.filename}\">Constructions</a></body>\n"
 
     s"<html lang=\"en-US\">\n$head$body</html>\n"
   }
