@@ -35,11 +35,7 @@ jobs:
       - name: Rename jar
         run: cp target/checker-*-jar-with-dependencies.jar checker.jar
       - name: Checkout Py2EO
-        uses: actions/checkout@v3
-        with:
-          repository: 'polystat/py2eo'
-      - run: cd ..
-      - run: tree
+        run: git clone https://github.com/polystat/py2eo.git
       - name: Run mutation analysis
         run: cd .. & java -jar checker.jar py2eo/transpiler/src/test/resources/org/polystat/py2eo/transpiler/simple-tests www
       - name: Deploy to github pages
