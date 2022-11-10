@@ -33,13 +33,14 @@ jobs:
       - name: Build with Maven
         run: mvn clean package -DskipTests
       - name: Rename jar
-        run: cp checker/target/checker-*-jar-with-dependencies.jar checker.jar
+        run: cp target/checker-*-jar-with-dependencies.jar checker.jar
       - name: Checkout Py2EO
         uses: actions/checkout@v3
         with:
           repository: 'polystat/py2eo'
+      - run: tree
       - name: Run mutation analysis
-        run: java -jar checker.jar transpiler/src/test/resources/org/polystat/py2eo/transpiler/simple-tests www
+        run: java -jar checker.jar py2eo/transpiler/src/test/resources/org/polystat/py2eo/transpiler/simple-tests www
       - name: Deploy to github pages
         uses: JamesIves/github-pages-deploy-action@v4.2.5
         with:
