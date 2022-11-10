@@ -38,6 +38,8 @@ jobs:
         uses: actions/checkout@v3
         with:
           repository: 'polystat/py2eo'
+      - run: cd ..
+      - run: tree
       - name: Run mutation analysis
         run: cd .. & java -jar checker.jar py2eo/transpiler/src/test/resources/org/polystat/py2eo/transpiler/simple-tests www
       - name: Deploy to github pages
